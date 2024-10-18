@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+        body{
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/4d2c5849-b306-4884-9036-6211f7ee0178/web/IN-en-20240930-TRIFECTA-perspective_1e1ca6cd-9e2d-4e9d-9e4b-ba0c2d3a0e31_small.jpg") ;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Sign-In{
+            display: flex;
+            align-items:start;
+            color: white;
+            font-weight:1000;
+            font-size:30px;
+
+        }
+        .container-2{
+
+            width: 100%;
+            background-color:rgba(0,0,0,0.78);
+            padding: 25px 68px 40px;
+            margin:0px 50px;
+            border-radius: 5px;
+            max-width: 500px;
+            text-align: center;
+
+        }
+        .logo-container{
+            width: 150px;
+            margin-bottom:30px;
+            max-width: 100%;
+            
+        }
+        .form-design{
+            padding: 60px 68px 40px;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+            color: white;
+            text-align: center;
+            
+        }
+        #email{
+            background-color: rgba(0,0,0,0.78);
+            border-radius: 4px;
+            font-weight:600;
+            width:450px;
+            max-width: 250px;
+            height: 35px;
+            border: 1px solid white;
+            padding:20px;
+
+        }
+        #password{
+            background-color: rgba(0,0,0,0.78);
+            border-radius: 4px;
+            font-weight:600;
+            width:250px;
+            max-width: 250px;
+            height: 35px;
+            border: 1px solid white;
+            padding:20px;
+        }
+
+        #SignIn{
+            background-color: red;
+            border-radius: 4px;
+            color: white;
+            width:250px;
+            height:32px;
+            max-width: 250px;
+        }
+        #SignIn:hover{
+            background-color: rgb(249, 91, 91);
+            cursor: pointer;
+        }
+        #Sign-In-Code{
+            background-color:#a59d9d;
+            border-radius: 4px;
+            color:white;
+            width:250px ;
+            height: 32px;
+            max-width: 250px;
+            
+        }
+        #Sign-In-Code:hover{
+            background-color:rgb(137, 133, 133);
+            cursor: pointer;
+        }
+
+        .OR{
+            color: white;
+            font-size: small;
+            
+        }
+        .Forgot-Password{
+            color: white;
+            
+        }
+        .Forgot-Password:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .container-3{
+            color: white;
+            text-align:left;
+            margin-top: 15px;
+
+        }
+        .signup-now {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #b3b3b3;
+        }
+
+        .signup-now a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .signup-now a:hover {
+            text-decoration: underline;
+        }
+
+        .image{
+            width:200px;
+            height:50px;
+            margin-right:600px
+        }
+        @media screen and (max-width: 768px) {
+            
+            .image{
+                width: 120px;
+                margin-bottom:30px;
+                max-width: 150px;
+                
+                
+            }
+
+            .form-design {
+                padding: 40px 15px;
+            }
+
+            #email, #password, #SignIn, #Sign-In-Code {
+                max-width: 100%;
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .image {
+                width: 200px;
+                max-width: 100%;
+            }
+
+            #email, #password, #SignIn, #Sign-In-Code {
+                max-width: 100%;
+                width: 90%;
+                height: 30px;
+            }
+            .Sign-In {
+                font-size: 24px;
+            }
+        }
+
+    </style>
+</head>
+<body>    
+    <div class="Container-1">
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo" class="image">
+        </div>
+            <div class="container-2">
+                <form class="form-design">
+                    <p class="Sign-In">Sign In</p><br>
+                    <input type="email number" id="email" placeholder="Email or mobile number" required><br><br>
+                    <input type="password" id="password" placeholder="Password" required><br><br>
+                    <button type="submit" id="SignIn">Sign In</button>
+                    <br><br>
+                    <p class="OR">OR</p><br>
+                    <button type="submit" id="Sign-In-Code">Use a sign-in-code</button>
+                    <br><br>
+                    <p class="Forgot-Password">Forgot Password?</p><br>
+                    <div class="container-3">
+                    <input type="checkbox" id="remember-me" value="remember-me">
+                    <label for="remember-me">Remember Me?</label>
+                    <div class="signup-now">
+                        New to Netflix? <a href="#">Sign up now</a>.
+                    </div>
+                    </div>
+                 </form>
+            </div>
+        </div>
+
+</body>
+</html>
